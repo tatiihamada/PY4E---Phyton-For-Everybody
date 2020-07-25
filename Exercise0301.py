@@ -1,8 +1,13 @@
 hours = input("Horas realizadas: ")
-h = float(hours)
 rate = input("Digite a quantidade de horas: ")
-r = float(rate)
 
+try: 
+    h = float(hours)
+    r = float(rate)
+except:
+    print("Por favor, insira um valor numérico e tente novamente.")
+    quit()
+    
 if h>40 :
     pagamento = h * r
     acrescimo = (h-40) * (r*0.5)
