@@ -1,6 +1,9 @@
+#Cálculo de pagamento com condicional
+
 hours = input("Horas realizadas: ")
 rate = input("Digite a quantidade de horas: ")
 
+#Validação da informação inserida pelo usuário
 try: 
     h = float(hours)
     r = float(rate)
