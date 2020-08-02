@@ -1,17 +1,14 @@
 #Código para extrair uma parte do texto
 
-text = "X-DSPAM-Confidence:    0.8475"
+text = "X-DSPAM-Confidence: 0.8475"
 
-x = text.find(' ')
-print(x)
-y = len(text)
-print(y)
+x = text.find(':')
 
-z = text[23:29]
-w = float(z)
+y = text[x+1:]
+w = float(y)
 print(w)
 
-    
+
 
 
 
